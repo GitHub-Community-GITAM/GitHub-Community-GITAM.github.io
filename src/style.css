@@ -1,0 +1,71 @@
+html,
+body {
+    /* background: #1C1F23; */
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.center-vh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.br-15 {
+    border-radius: 15px;
+}
+
+.br-30 {
+    border-radius: 30px;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: white !important;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+.grad-circle {
+    border-radius: 50%;
+    background: radial-gradient(111.14% 111.14% at 8.37% 0%, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0) 100%)
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: 2px solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    font-size: 5vw;
+    animation:
+        typing 3.5s,
+        blinking .75s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blinking {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
