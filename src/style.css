@@ -42,18 +42,23 @@ section {
     border-right: 2px solid orange;
     white-space: nowrap;
     margin: 0 auto;
-    font-size: 5vw;
-    animation:
-        typing 3.5s,
-        blinking .75s infinite;
+    font-size: 5vw; 
+}
+
+.animate-typed-out {
+    animation: 
+    typing 5.0s infinite,
+    blinking .75s infinite;
 }
 
 @keyframes typing {
-    from {
+
+    from,
+    to {
         width: 0
     }
 
-    to {
+    50% {
         width: 100%
     }
 }
