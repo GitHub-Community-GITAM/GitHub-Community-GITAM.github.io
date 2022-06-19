@@ -20,6 +20,12 @@ body {
     background-color: #3D4179 !important;
 }
 
+.bg-grey{
+    
+    background-color: #efefef;
+
+}
+
 .text-primary {
     color: #B982FF !important;
 }
@@ -54,6 +60,43 @@ section {
     font-weight: bold;
 }
 
+.br-30 {
+    border-radius: 30px;
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: 2px solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    font-size: 5vw;
+    animation:
+        typing 3.5s,
+        blinking .75s infinite;
+    color: white;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blinking {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
 
 /* TESTIMONIALS */
 /* #events
