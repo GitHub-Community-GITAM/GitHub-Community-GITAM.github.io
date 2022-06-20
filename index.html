@@ -7,6 +7,23 @@
     <title>GitHub Community Gitam</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/colors.css">
 </head>
@@ -23,10 +40,14 @@
                 <div class="navbar-nav nav-padding px-2 align-items-center ms-auto">
                     <a class="mx-2" href="#home">Home</a>
                     <a class="mx-2" href="#about">About</a>
-                    <a class="mx-2" href="#contact">Contact</a>
                     <a class="mx-2" href="#team">Team</a>
                     <a class="mx-2" href="#events">Events</a>
-                    <button type="button" class="btn btn-light btn-sm mx-2">Join us</button>
+                    <a class="mx-2" href="#contact">Contact</a>
+                    <a href="https://forms.gle/gMZ3QdSBBrH3btAf6" class="btn btn-light mx-2">
+                        <p style="color: black;" class="my-0">
+                            Join us
+                        </p> 
+                    </a> 
                 </div>
             </div>
         </div>
@@ -41,7 +62,6 @@
                 </div>
             </div>
         </div>
-
     </section>
     <!-- ****HOME SECTION**** -->
 
@@ -60,7 +80,7 @@
                         incidunt nesciunt veniam, commodi architecto eveniet porro at ea.
                     </p>
                 </div>
-                <div class="col d-flex align-items-end">
+                <div class="col d-flex align-items-center">
                     <img src="assets/HOLAA! 1.png" class='img-fluid' alt="">
                 </div>
             </div>
@@ -72,7 +92,6 @@
     <section id="team">
         <div class="container my-2">
             <div class="row justify-content-center">
-
                 <div class="center-vh flex-column text-center m-2" style="width: 250px;">
                     <div class="center-vh rounded-circle border border-white" style="height: 200px; width: 200px;">
                         <img class="img-fluid" src="assets/github2 1.png">
@@ -138,75 +157,151 @@
     <!-- team section Ending -->
 
     <!-- EVENTS SECTION -->
-    <section id="events">
-        <div class="container my-2">
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <img src="assets/github2 1.png" width="50px">
-                </div>
-            </div>
-            <div class="row justify-content-center">
+    <section id="events" style="height: 100vh;">
+        <div class="container h-100">
+            <div class="row h-100 d-flex align-items-center">
+                <div class="col">
+                    <div class="items">
 
-                <div class="center-vh flex-column br-15 bg-primary text-center m-2" style="height: 200px; width:250px;">
-                    <div class="grad-circle center-vh" style="height: 60px; width: 60px;"></div>
-                    <div class="font-weight-bold">Lorem, ipsum.</div>
-                    <div class="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, numquam?
+
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary" id="cardPic">
+                                <img class="profile-image img-fluid"
+                                    src="./assets/2.png">
+                                    <div class="card-body" id="cardContent">
+                                        <h5 class="card-title">Delbert Simonas</h5>
+                                        <p class="card-text">"Online reviews can make or break a customer's decision to make a purchase.
+                                            Read
+                                            about
+                                            these customer review on site"</p>
+                                    </div> 
+                            </div>           
+                        </div>
+            
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary">
+                                <img class="profile-image img-fluid"
+                                    src="./assets/3.png">
+            
+            
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tikoh Amin</h5>
+                                        <p class="card-text">"When you think of Apple you automatically think expensive if your anything
+                                            like
+                                            me. When
+                                            purchasing this laptop I was skeptical."</p>
+                                    </div>
+                            </div>
+            
+                        </div>
+            
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary">
+            
+                                <img class="profile-image img-fluid"
+                                    src="./assets/4.png">
+            
+            
+                                    <div class="card-body">
+                                        <h5 class="card-title">Malachi Lensing</h5>
+                                        <p class="card-text">"I&rsquo;ve wanted a MacBook for a while now because of the build quality and
+                                            the
+                                            simplicity of the OS. I spend an average 6 hours a day."</p>
+                                    </div>
+                            </div>
+            
+                        </div>
+            
+            
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary">
+            
+                                <img class="profile-image img-fluid"
+                                    src="./assets/5.png">
+            
+            
+                                    <div class="card-body">
+                                        <h5 class="card-title">Christian Isla</h5>
+                                        <p class="card-text">"This MacBook has excellent processing speed. The screen is crystal clear and I
+                                            really
+                                            enjoy the touchbar. I set it up"</p>
+                                    </div>
+                            </div>
+            
+                        </div>
+            
+            
+            
+                        <div class="card">
+                            <div class="media media-2x1 gd-primary">
+            
+                                <img class="profile-image img-fluid"
+                                    src="./assets/6.png">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lori Charles</h5>
+                                        <p class="card-text">"For the last 10 years, I have owned an old Gateway laptop. Although it was
+                                            amazing
+                                            and
+                                            lasted me, it was time for an upgrade."</p>
+                                    </div>
+                            </div>
+            
+                        </div>
+                        <div class="card">
+
+                            <div class="media media-2x1 gd-primary">
+            
+                                <img class="profile-image img-fluid"
+                                    src="./assets/7.png">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lori Charles</h5>
+                                        <p class="card-text">"For the last 10 years, I have owned an old Gateway laptop. Although it was
+                                            amazing
+                                            and
+                                            lasted me, it was time for an upgrade."</p>
+                                    </div>
+                            </div>
+            
+                        </div>
                     </div>
-                    <a class="text-primary" href="#">Know More →</a>
                 </div>
-
-                <div class="center-vh flex-column br-15 bg-primary text-center m-2" style="height: 200px; width:250px;">
-                    <div class="grad-circle center-vh" style="height: 60px; width: 60px;"></div>
-                    <div class="font-weight-bold">Lorem, ipsum.</div>
-                    <div class="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, numquam?
-                    </div>
-                    <a class="text-primary" href="#">Know More →</a>
-                </div>
-
-                <div class="center-vh flex-column br-15 bg-primary text-center m-2" style="height: 200px; width:250px;">
-                    <div class="grad-circle center-vh" style="height: 60px; width: 60px;"></div>
-                    <div class="font-weight-bold">Lorem, ipsum.</div>
-                    <div class="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, numquam?
-                    </div>
-                    <a class="text-primary" href="#">Know More →</a>
-                </div>
-
-                <div class="center-vh flex-column br-15 bg-primary text-center m-2" style="height: 200px; width:250px;">
-                    <div class="grad-circle center-vh" style="height: 60px; width: 60px;"></div>
-                    <div class="font-weight-bold">Lorem, ipsum.</div>
-                    <div class="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, numquam?
-                    </div>
-                    <a class="text-primary" href="#">Know More →</a>
-                </div>
-
-                <div class="center-vh flex-column br-15 bg-primary text-center m-2" style="height: 200px; width:250px;">
-                    <div class="grad-circle center-vh" style="height: 60px; width: 60px;"></div>
-                    <div class="font-weight-bold">Lorem, ipsum.</div>
-                    <div class="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, numquam?
-                    </div>
-                    <a class="text-primary" href="#">Know More →</a>
-                </div>
-
-                <div class="center-vh flex-column br-15 bg-primary text-center m-2" style="height: 200px; width:250px;">
-                    <div class="grad-circle center-vh" style="height: 60px; width: 60px;"></div>
-                    <div class="font-weight-bold">Lorem, ipsum.</div>
-                    <div class="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, numquam?
-                    </div>
-                    <a class="text-primary" href="#">Know More →</a>
-                </div>
-
             </div>
         </div>
+
+        
     </section>
+
     <!--**** EVENTS SECTION ****-->
 
+    <!-- CONTACT SECTION -->
+    <section id="contact" style="height:100vh">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="d-flex justify-content-center align-items-center col-lg-6 col-md-6 col-sm-12" >
+                    <form action="">
+                        <label for="name"><b>Name</b></label>
+                        <br>
+                        <input type="text" name="Name" id="Name">
+                        <br>
+                        <label for="email"><b>Email</b></label>
+                        <br>
+                        <input type="email" name="email" id="">
+                        <br>
+                        <label for="message"><b>Message</b></label>
+                        <br>
+                        <textarea name="message" id="" cols="30" rows="3"></textarea>
+                        <br>
+                        <button type="submit" id="btn" style="color:white;">Submit</button>
+                    </form>
+                </div>
+                <div class="d-flex justify-content-center align-items-center col-lg-6 col-md-6 col-sm-12">
+                    <img src="./assets/contact.png" alt="getInTouch" class="img-fluid d-none d-md-block d-lg-block">
+                </div>
+            </div>
+        </div>
 
+    </section>
+    <!-- ***CONTACT SECTION**** -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
