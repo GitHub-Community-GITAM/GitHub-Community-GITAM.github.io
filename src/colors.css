@@ -6,11 +6,14 @@
     background-color: #3D4179 !important;
 }
 
-.bg-grey{
-background-color: #efefef;
+.bg-grey {
+    background-color: #efefef;
+}
+
+.bg-darkgrey {
+    background-color: #23272c;
 }
 
 .text-primary {
     color: #B982FF !important;
 }
-
