@@ -1,319 +1,185 @@
+<!doctype html>
+<html lang="en">
 
-    <!doctype html>
-    <html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+    <title>GitHub Community Gitam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>GitHub Community Gitam</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-        </script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <link rel="stylesheet" type="text/css"
-            href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-        <link rel="stylesheet" type="text/css"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
-        </script>
+    <!-- <link rel="stylesheet" href="src/style.css"> -->
+    <link rel="stylesheet" href="src/components.css">
+    <link rel="stylesheet" href="src/styles.css">
 
-        <link rel="stylesheet" href="src/style.css">
-        <link rel="stylesheet" href="src/colors.css">
-    </head>
+</head>
 
-    <body>
+<body class="light-theme" id="body" data-scroll="0">
 
-        <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
-            <div class="container-fluid">
-                <img height=40px src="assets/community-logo.png">
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <div class="navbar-nav nav-padding px-2 align-items-center ms-auto">
-                        <a class="mx-2" href="#home">Home</a>
-                        <a class="mx-2" href="#about">About</a>
-                        <a class="mx-2" href="#team">Team</a>
-                        <a class="mx-2" href="#events">Events</a>
-                        <a class="mx-2" href="#contact">Contact</a>
-                        <a href="https://forms.gle/gMZ3QdSBBrH3btAf6" class="btn btn-light mx-2">
-                            <p style="color: black;" class="my-0">
-                                Join us
-                            </p>
-                        </a>
-                    </div>
+    <nav class="navbar navbar-expand-sm fixed-top material-navbar">
+        <div class="container-fluid m-1">
+            <img height=40px src="assets/logo.svg">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav nav-padding px-2 align-items-center ms-auto">
+                    <a class="material-button-filled material-button-sm m-1" href="#home">Home</a>
+                    <a class="material-button-outlined material-button-sm my-1" href="#about">About</a>
+                    <a class="material-button-outlined material-button-sm m-1" href="#team">Team</a>
+                    <a class="material-button-outlined material-button-sm my-1" href="#events">Events</a>
+                    <a class="material-button-outlined material-button-sm mx-1" href="#contact">Socials</a>
+                    <a class="material-button-outlined material-button-sm" href="https://forms.gle/gMZ3QdSBBrH3btAf6">
+                        Join us
+                    </a>
                 </div>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- HOME SECTION -->
-        <section id="home" style="height: 100vh;">
-            <div class="h-100 p-3">
-                <div class="h-100 center-vh br-30 bg-darkgrey">
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-auto">
-                                <img class="img-fluid" src="./assets/community-logo.png">
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-auto">
-                                <div id="mytext" class="typed-out text-white">GitHub Community Gitam</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <!-- ****HOME SECTION**** -->
-
-
-        <!-- ABOUT SECTION -->
-        <section id="about" style="height: 100vh;">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col d-flex align-items-center">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illum tenetur harum
-                            repellendus
-                            vel
-                            excepturi eveniet voluptas, earum iste ex reiciendis eos deserunt ipsam perspiciatis iusto
-                            nam
-                            dolorem deleniti voluptatem eaque quaerat? Ut, officiis ad error culpa doloremque iusto
-                            aliquid
-                            quia
-                            incidunt nesciunt veniam, commodi architecto eveniet porro at ea.
-                        </p>
-                    </div>
-                    <div class="col d-flex align-items-center">
-                        <img src="assets/HOLAA! 1.png" class='img-fluid' alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ****About Section**** -->
-
-        <!-- team section -->
-        <section id="team">
-            <div class="container my-2">
+    <!-- HOME SECTION -->
+    <section id="home" class="p-4" style="height: 100vh">
+        <div class="h-100" style="padding-top: 80px;">
+            <div class="material-card h-100 center-vh">
                 <div class="row justify-content-center">
-                    <div class="center-vh flex-column text-center m-2" style="width: 250px;">
-                        <div class="center-vh rounded-circle border border-white" style="height: 200px; width: 200px;">
-                            <img class="img-fluid" src="assets/github2 1.png">
-                        </div>
-                        <div>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero veritatis ab ducimus nulla
-                            rem,iusto maiores animi qui a vitae
-                        </div>
-                    </div>
-
-                    <div class="center-vh flex-column text-center m-2" style="width: 250px;">
-                        <div class="center-vh rounded-circle border border-white" style="height: 200px; width: 200px;">
-                            <img class="img-fluid" src="assets/github2 1.png">
-                        </div>
-                        <div>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero veritatis ab ducimus nulla
-                            rem,iusto maiores animi qui a vitae
-                        </div>
-                    </div>
-
-                    <div class="center-vh flex-column text-center m-2" style="width: 250px;">
-                        <div class="center-vh rounded-circle border border-white" style="height: 200px; width: 200px;">
-                            <img class="img-fluid" src="assets/github2 1.png">
-                        </div>
-                        <div>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero veritatis ab ducimus nulla
-                            rem,iusto maiores animi qui a vitae
-                        </div>
-                    </div>
-
-                    <div class="center-vh flex-column text-center m-2" style="width: 250px;">
-                        <div class="center-vh rounded-circle border border-white" style="height: 200px; width: 200px;">
-                            <img class="img-fluid" src="assets/github2 1.png">
-                        </div>
-                        <div>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero veritatis ab ducimus nulla
-                            rem,iusto maiores animi qui a vitae
-                        </div>
-                    </div>
-
-                    <div class="center-vh flex-column text-center m-2" style="width: 250px;">
-                        <div class="center-vh rounded-circle border border-white" style="height: 200px; width: 200px;">
-                            <img class="img-fluid" src="assets/github2 1.png">
-                        </div>
-                        <div>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero veritatis ab ducimus nulla
-                            rem,iusto maiores animi qui a vitae
-                        </div>
-                    </div>
-
-                    <div class="center-vh flex-column text-center m-2" style="width: 250px;">
-                        <div class="center-vh rounded-circle border border-white" style="height: 200px; width: 200px;">
-                            <img class="img-fluid" src="assets/github2 1.png">
-                        </div>
-                        <div>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero veritatis ab ducimus nulla
-                            rem,iusto maiores animi qui a vitae
-                        </div>
-                    </div>
-
-                </div>
-        </section>
-        <!-- team section Ending -->
-
-        <!-- EVENTS SECTION -->
-        <section id="events" style="height: 100vh;">
-            <div class="container h-100">
-                <div class="row h-100 d-flex align-items-center">
-                    <div class="col">
-                        <div class="items">
-                            <div class="card">
-                                <div class="media media-2x1 gd-primary" id="cardPic">
-                                    <img class="profile-image img-fluid" src="./assets/2.png">
-                                    <div class="card-body" id="cardContent">
-                                        <h5 class="card-title">Delbert Simonas</h5>
-                                        <p class="card-text">"Online reviews can make or break a customer's decision to
-                                            make a purchase.
-                                            Read
-                                            about
-                                            these customer review on site"</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="media media-2x1 gd-primary">
-                                    <img class="profile-image img-fluid" src="./assets/3.png">
-
-
-                                    <div class="card-body">
-                                        <h5 class="card-title">Tikoh Amin</h5>
-                                        <p class="card-text">"When you think of Apple you automatically think expensive
-                                            if your anything
-                                            like
-                                            me. When
-                                            purchasing this laptop I was skeptical."</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="card">
-                                <div class="media media-2x1 gd-primary">
-
-                                    <img class="profile-image img-fluid" src="./assets/4.png">
-
-
-                                    <div class="card-body">
-                                        <h5 class="card-title">Malachi Lensing</h5>
-                                        <p class="card-text">"I&rsquo;ve wanted a MacBook for a while now because of the
-                                            build quality and
-                                            the
-                                            simplicity of the OS. I spend an average 6 hours a day."</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="card">
-                                <div class="media media-2x1 gd-primary">
-
-                                    <img class="profile-image img-fluid" src="./assets/5.png">
-
-
-                                    <div class="card-body">
-                                        <h5 class="card-title">Christian Isla</h5>
-                                        <p class="card-text">"This MacBook has excellent processing speed. The screen is
-                                            crystal clear and I
-                                            really
-                                            enjoy the touchbar. I set it up"</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="card">
-                                <div class="media media-2x1 gd-primary">
-
-                                    <img class="profile-image img-fluid" src="./assets/6.png">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lori Charles</h5>
-                                        <p class="card-text">"For the last 10 years, I have owned an old Gateway laptop.
-                                            Although it was
-                                            amazing
-                                            and
-                                            lasted me, it was time for an upgrade."</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="card">
-
-                                <div class="media media-2x1 gd-primary">
-
-                                    <img class="profile-image img-fluid" src="./assets/7.png">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lori Charles</h5>
-                                        <p class="card-text">"For the last 10 years, I have owned an old Gateway laptop.
-                                            Although it was
-                                            amazing
-                                            and
-                                            lasted me, it was time for an upgrade."</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+                    <div class="col-auto">
+                        <div id="mytext" class="typed-out">GitHub Community Gitam</div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- ****HOME SECTION**** -->
 
 
-        </section>
-
-        <!--**** EVENTS SECTION ****-->
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" style="height:100vh">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="d-flex justify-content-center align-items-center col-lg-6 col-md-6 col-sm-12">
-                        <form action="">
-                            <label for="name"><b>Name</b></label>
-                            <br>
-                            <input type="text" name="Name" id="Name">
-                            <br>
-                            <label for="email"><b>Email</b></label>
-                            <br>
-                            <input type="email" name="email" id="">
-                            <br>
-                            <label for="message"><b>Message</b></label>
-                            <br>
-                            <textarea name="message" id="" cols="30" rows="3"></textarea>
-                            <br>
-                            <button type="submit" id="btn" style="color:white;">Submit</button>
-                        </form>
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center col-lg-6 col-md-6 col-sm-12">
-                        <img src="./assets/contact.png" alt="getInTouch" class="img-fluid d-none d-md-block d-lg-block">
-                    </div>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="p-4" style="height: 100vh;">
+        <div class="h-100" style="padding-top: 50px;">
+            <label class="text-primary font-48px">About</label>
+            <div class="row g-0">
+                <div class="col-md font-20px">
+                    GitHub Community Gitam is one of the most active tech clubs at gitam.
+                    The club is not a part of just one Campus but all 3 campuses of gitam (Visakhapatnam, Hyderabad,
+                    Bengaluru).
+                    The club has both tech team and non-tech team. The community is founded on April 2020 and has hosted
+                    various events till date.
+                    The club is open to any gitamite and can join/follow our various socials to get updates regarding
+                    upcoming or on-going events.
+                </div>
+                <div class="col-md text-center">
+                    <img class="img-fluid" src="./assets/logo.svg" height="200px" width="200px">
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- ****About Section**** -->
 
-        </section>
-        <!-- ***CONTACT SECTION**** -->
+    <!-- team section -->
+    <section id="team" class="p-4">
+        <div style="padding-top: 50px;">
+            <label class="text-primary font-48px">Team</label>
+            <div class="row justify-content-center">
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                    <img class="img-fluid" src="assets/github2 1.png" style="background-color: black;">
+                    <label>App Dev Lead</label>
+                </div>
+
+                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                    <img class="img-fluid" src="assets/github2 1.png" style="background-color: black;">
+                    <label>App Dev Lead</label>
+                </div>
+
+                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                    <img class="img-fluid" src="assets/github2 1.png" style="background-color: black;">
+                    <label>App Dev Lead</label>
+                </div>
+
+                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                    <img class="img-fluid" src="assets/github2 1.png" style="background-color: black;">
+                    <label>App Dev Lead</label>
+                </div>
+
+                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                    <img class="img-fluid" src="assets/github2 1.png" style="background-color: black;">
+                    <label>App Dev Lead</label>
+                </div>
+
+                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                    <img class="img-fluid" src="assets/github2 1.png" style="background-color: black;">
+                    <label>App Dev Lead</label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team section Ending -->
+
+    <!-- EVENTS SECTION -->
+    <section id="events" class="p-4">
+        <div class="h-100" style="padding-top: 50px;">
+            <label class="text-primary font-48px">Events</label>
+            <div class="row justify-content-center">
+
+                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                    <img class="img-fluid material-card" src="assets/2.png">
+                </div>
+
+                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                    <img class="img-fluid material-card" src="assets/3.png">
+                </div>
+
+                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                    <img class="img-fluid material-card" src="assets/4.png">
+                </div>
+
+                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                    <img class="img-fluid material-card" src="assets/5.png">
+                </div>
+
+                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                    <img class="img-fluid material-card" src="assets/6.png">
+                </div>
+
+                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                    <img class="img-fluid material-card" src="assets/7.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--**** EVENTS SECTION ****-->
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="p-4" style="height:100vh">
+        <div class="h-100" style="padding-top: 50px;">
+            <label class="text-primary font-48px">Socials</label>
+            <div class="h-100 center-vh flex-column">
+                <div class="material-card m-4">
+                    <a href="" class="m-5">
+                        <img src="./assets/Discord.svg">
+                    </a>
+                    <a href="" class="m-5">
+                        <img src="./assets/Github.svg">
+                    </a>
+                    <a href="" class="m-5">
+                        <img src="./assets/Instagram.svg">
+                    </a>
+                    <a href="" class="m-5">
+                        <img src="./assets/LinkedIn.svg">
+                    </a>
+                </div>
+
+                <label class="font-20px m-4">
+                    Follow us on socials to stay updated with upcoming events and informational posts.
+                </label>
+            </div>
+        </div>
+    </section>
+    <!-- ***CONTACT SECTION**** -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
         </script>
-        <script src="src/script.js"></script>
-    </body>
+    <script src="src/script.js"></script>
+</body>
 
-    </html>
+</html>
