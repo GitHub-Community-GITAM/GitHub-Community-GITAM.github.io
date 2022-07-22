@@ -1,0 +1,127 @@
+[
+    {
+        "name": "Srinija",
+        "img": "Srinija.jpg",
+        "title": "President"
+    },
+    {
+        "name": "Nanda",
+        "img": "Nanda.jpg",
+        "title": "Tech Lead"
+    },
+    {
+        "name": "Sujana",
+        "img": "Sujana.jpg",
+        "title": "Non-tech Lead and UI/UX Lead"
+    },
+    {
+        "name": "Jaswanth",
+        "img": "Jaswanth(1).jpg",
+        "title": "Web Dev Lead"
+    },
+    {
+        "name": "David",
+        "img": "David.jpg",
+        "title": "Web Dev Team"
+    },
+    {
+        "name": "Aaditya",
+        "img": "Aaditya.jpeg",
+        "title": "Web Dev Team"
+    },
+    {
+        "name": "Bhanu",
+        "img": "Bhanu Pavan.jpeg",
+        "title": "Web Dev Team"
+    },
+    {
+        "name": "Sumanth",
+        "img": "Sumanth.jpg",
+        "title": "App Dev Lead"
+    },
+    {
+        "name": "Mathew",
+        "img": "Mathew.jpg",
+        "title": "App Dev Team"
+    },
+    {
+        "name": "Mythreyi",
+        "img": "Mythreyi.jpg",
+        "title": "AI/ML Lead"
+    },
+    {
+        "name": "Jaswanth",
+        "img": "Jaswanth.jpg",
+        "title": "AI/ML Team"
+    },
+    {
+        "name": "Karthik",
+        "img": "Karthik.jpeg",
+        "title": "UI/UX Team"
+    },
+    {
+        "name": "Sankeerthan",
+        "img": "Sankeerthan.jpg",
+        "title": "Content Lead"
+    },
+    {
+        "name": "Soumili",
+        "img": "Soumili.jpg",
+        "title": "Content Team"
+    },
+    {
+        "name": "Aditi",
+        "img": "Aditi.jpg",
+        "title": "Design Lead"
+    },
+    {
+        "name": "Shilpa",
+        "img": "Shilpa.jpg",
+        "title": "Design and Content Team"
+    },
+    {
+        "name": "Samhita",
+        "img": "Samhita.jpg",
+        "title": "Design Team"
+    },
+    {
+        "name": "Sampath",
+        "img": "Sampath.jpg",
+        "title": "Marketing Lead"
+    },
+    {
+        "name": "Sathvika",
+        "img": "Sathvika.jpeg",
+        "title": "Marketing Team"
+    },
+    {
+        "name": "Prabha",
+        "img": "Surya Prabha.jpg",
+        "title": "Marketing Team"
+    },
+    {
+        "name": "Tarun",
+        "img": "Tarun.jpg",
+        "title": "Marketing Team"
+    },
+    {
+        "name": "Monisha",
+        "img": "Monisha.jpg",
+        "title": "Marketing Team"
+    },
+    {
+        "name": "Sushanth",
+        "img": "Sushanth.jpg",
+        "title": "Marketing Team"
+    },
+    {
+        "name": "Vivian",
+        "img": "Vivian.jpeg",
+        "title": "PR Lead"
+    },
+    {
+        "name": "Nishitha",
+        "img": "Nishitha.jpg",
+        "title": "PR Team"
+    }
+]
