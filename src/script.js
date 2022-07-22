@@ -3,14 +3,10 @@ document.addEventListener('scroll', () => {
 });
 
 animateText()
+setTheme()
+setThemeToggleListener()
+addTeamMembers()
 
-const teamContainer = document.getElementById('teamContainer')
-loadJSON('../config/team.json', (team) => {
-  team.forEach(it => {
-    const teamCard = getTeamCard(it.img, it.name, it.title)
-    teamContainer.insertAdjacentHTML('beforeend', teamCard)
-  });
-})
 
 function animateText() {
   const phrases = [
@@ -21,6 +17,43 @@ function animateText() {
   setInterval(() => {
     elem.innerHTML = phrases[getRndInteger(0, phrases.length - 1)]
   }, 5000)
+}
+
+function setTheme() {
+  const toggle = document.getElementById('themeSwitch')
+  const body = document.getElementById('body')
+  if (localStorage.getItem('dark-theme')) {
+    body.classList.remove('light-theme')
+    body.classList.add('dark-theme')
+    toggle.setAttribute('checked', 'true')
+  }
+}
+
+function setThemeToggleListener() {
+  const toggle = document.getElementById('themeSwitch')
+  const body = document.getElementById('body')
+
+  toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+      body.classList.remove('light-theme')
+      body.classList.add('dark-theme')
+      localStorage.setItem('dark-theme', true)
+    } else {
+      body.classList.add('light-theme')
+      body.classList.remove('dark-theme')
+      localStorage.removeItem('dark-theme')
+    }
+  })
+}
+
+function addTeamMembers() {
+  const teamContainer = document.getElementById('teamContainer')
+  loadJSON('../config/team.json', (team) => {
+    team.forEach(it => {
+      const teamCard = getTeamCard(it.img, it.name, it.title)
+      teamContainer.insertAdjacentHTML('beforeend', teamCard)
+    })
+  })
 }
 
 function getRndInteger(min, max) {

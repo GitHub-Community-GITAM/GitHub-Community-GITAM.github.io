@@ -111,5 +111,5 @@ body {
     width: 48px;
     border: 4px solid var(--primary);
     background-color: var(--primary);
-    background-image: url(../img/circle.png);
+    background-image: url(../assets/circle.svg);
 }
