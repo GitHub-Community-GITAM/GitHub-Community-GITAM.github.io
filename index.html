@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Community Gitam</title>
     <link rel="icon" type="image/x-icon" href="/assets/logo.svg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="src/styles.css">
 </head>
 
-<body class="light-theme" id="body" data-scroll="0">
+<body class="light-theme" id="body">
 
-    <nav class="navbar navbar-expand-md fixed-top material-navbar">
+    <nav class="navbar navbar-expand-md fixed-top material-navbar m-2">
         <div class="container-fluid m-1">
-            <img height=40px src="assets/logo.svg">
+            <img height="40" src="assets/logo.svg">
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,12 +39,16 @@
     </nav>
 
     <!-- HOME SECTION -->
-    <section id="home" class="p-4" style="height: 100vh">
-        <div class="h-100" style="padding-top: 80px;">
-            <div class="material-card h-100 center-vh">
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <div id="mytext" class="typed-out">GitHub Community Gitam</div>
+    <section id="home" style="height: 100%;">
+        <div class="container pb-2 h-100">
+            <div class="row h-100">
+                <div class="col">
+                    <div class="material-card center-vh h-100">
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <div id="mytext" class="typed-out">GitHub Community Gitam</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -54,11 +58,11 @@
 
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="p-4" style="height: 100vh;">
-        <div class="h-100" style="padding-top: 50px;">
-            <label class="text-primary font-48px">About</label>
-            <div class="row g-0">
-                <div class="col-md font-20px">
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <label class="display-medium text-primary mb-2">About</label>
+                <div class="col-md title-large">
                     GitHub Community Gitam is one of the most active tech clubs at gitam.
                     The club is not a part of just one Campus but all 3 campuses of gitam (Visakhapatnam, Hyderabad,
                     Bengaluru).
@@ -67,8 +71,8 @@
                     The club is open to any gitamite and can join/follow our various socials to get updates regarding
                     upcoming or on-going events.
                 </div>
-                <div class="col-md text-center">
-                    <img class="img-fluid" src="./assets/logo.svg" height="200px" width="200px">
+                <div class="col-md">
+                    <img src="./assets/logo.svg" class="img-fluid" height="200px" width="200px">
                 </div>
             </div>
         </div>
@@ -76,42 +80,46 @@
     <!-- ****About Section**** -->
 
     <!-- team section -->
-    <section id="team" class="p-4">
-        <div style="padding-top: 50px;">
-            <label class="text-primary font-48px">Team</label>
-            <div id="teamContainer" class="row justify-content-center m-1"></div>
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <label class="display-medium text-primary mb-2">Team</label>
+                <div id="teamContainer" class="row justify-content-center m-1"></div>
+            </div>
         </div>
     </section>
     <!-- team section Ending -->
 
     <!-- EVENTS SECTION -->
-    <section id="events" class="p-4">
-        <div class="h-100" style="padding-top: 50px;">
-            <label class="text-primary font-48px">Events</label>
-            <div class="row justify-content-center">
+    <section id="events">
+        <div class="container">
+            <div class="row">
+                <label class="display-medium text-primary mb-2">Events</label>
+                <div class="row justify-content-center">
 
-                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
-                    <img class="img-fluid material-card" src="assets/2.png">
-                </div>
+                    <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                        <img class="img-fluid material-card" src="assets/2.png">
+                    </div>
 
-                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
-                    <img class="img-fluid material-card" src="assets/3.png">
-                </div>
+                    <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                        <img class="img-fluid material-card" src="assets/3.png">
+                    </div>
 
-                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
-                    <img class="img-fluid material-card" src="assets/4.png">
-                </div>
+                    <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                        <img class="img-fluid material-card" src="assets/4.png">
+                    </div>
 
-                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
-                    <img class="img-fluid material-card" src="assets/5.png">
-                </div>
+                    <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                        <img class="img-fluid material-card" src="assets/5.png">
+                    </div>
 
-                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
-                    <img class="img-fluid material-card" src="assets/6.png">
-                </div>
+                    <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                        <img class="img-fluid material-card" src="assets/6.png">
+                    </div>
 
-                <div class="center-vh flex-column text-center m-2" style="width: 250px;">
-                    <img class="img-fluid material-card" src="assets/7.png">
+                    <div class="center-vh flex-column text-center m-2" style="width: 250px;">
+                        <img class="img-fluid material-card" src="assets/7.png">
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,28 +127,29 @@
     <!--**** EVENTS SECTION ****-->
 
     <!-- CONTACT SECTION -->
-    <section id="contact" class="p-4" style="height:100vh">
-        <div class="h-100" style="padding-top: 50px;">
-            <label class="text-primary font-48px">Socials</label>
-            <div class="h-100 center-vh flex-column">
-                <div class="material-card m-4">
-                    <a href="https://discord.gg/M7uFE99w7F" class="m-5">
-                        <img src="./assets/Discord.svg">
-                    </a>
-                    <a href="https://github.com/github-community-gitam" class="m-5">
-                        <img src="./assets/Github.svg">
-                    </a>
-                    <a href="https://www.instagram.com/github.gitam" class="m-5">
-                        <img src="./assets/Instagram.svg">
-                    </a>
-                    <a href="https://www.linkedin.com/company/github-gitam" class="m-5">
-                        <img src="./assets/LinkedIn.svg">
-                    </a>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <label class="display-medium text-primary mb-2">Socials</label>
+                <div class="d-flex align-items-center flex-column">
+                    <div class="material-card my-4">
+                        <a href="https://discord.gg/M7uFE99w7F" class="m-5">
+                            <img src="./assets/Discord.svg">
+                        </a>
+                        <a href="https://github.com/github-community-gitam" class="m-5">
+                            <img src="./assets/Github.svg">
+                        </a>
+                        <a href="https://www.instagram.com/github.gitam" class="m-5">
+                            <img src="./assets/Instagram.svg">
+                        </a>
+                        <a href="https://www.linkedin.com/company/github-gitam" class="m-5">
+                            <img src="./assets/LinkedIn.svg">
+                        </a>
+                    </div>
+                    <label class="m-4">
+                        Follow us on socials to stay updated with upcoming events and informational posts.
+                    </label>
                 </div>
-
-                <label class="font-20px m-4">
-                    Follow us on socials to stay updated with upcoming events and informational posts.
-                </label>
             </div>
         </div>
     </section>

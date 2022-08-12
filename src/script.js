@@ -1,7 +1,3 @@
-document.addEventListener('scroll', () => {
-  document.getElementById('body').setAttribute('data-scroll', window.scrollY)
-});
-
 animateText()
 setTheme()
 setThemeToggleListener()
