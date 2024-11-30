@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackathon Collobarately hosted by github</title>
+  <style>
+    :root {
+      --purple-black-bg: color-mix(in lab, purple 70%, black 30%);
+    }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background: url('./images/teambg.png') no-repeat center center fixed; 
+    background-size: cover; 
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      padding: 20px;
+    }
+    .gallery-item {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid white;
+    }
+    .gallery-item h3 {
+      margin: 0;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hackathon Gallery</h1>
+    <p>Know  the moments from our past Hackathons!</p>
+  </header>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="./images/hackathon1.jpg" alt="Hackathon 1">
+      <h3>Technova</h3>
+    </div>
+  </div>
+</body>
+</html>
