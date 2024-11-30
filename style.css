@@ -1134,8 +1134,8 @@ section {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: #000000;
+  border: 1px solid #000000;
   display: none;
   position: absolute;
   right: 20px;
