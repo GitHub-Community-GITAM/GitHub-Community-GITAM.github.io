@@ -1296,7 +1296,7 @@ section {
     position: absolute;
     top: 50px;
     left: 0;
-    background-color: #333;
+    background-color: #000000;
     width: 100%;
     z-index: 10;
     text-align: center;
@@ -1360,7 +1360,7 @@ section {
     position: absolute;
     top: 50px;
     left: 0;
-    background-color: #333;
+    background-color: #000000;
     width: 100%;
     z-index: 10;
     text-align: center;
@@ -1482,7 +1482,7 @@ section {
     position: absolute;
     top: 50px;
     left: 0;
-    background-color: #333;
+    background-color: #000000;
     width: 100%;
     z-index: 10;
     text-align: center;
