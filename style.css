@@ -1227,7 +1227,6 @@ section {
   }
 
   header .nav-links {
-    display: none; /* Hide navigation links */
     flex-direction: column;
     position: absolute;
     top: 50px;
