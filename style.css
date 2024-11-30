@@ -1149,7 +1149,7 @@ section {
 
 .dropdown-menu li a {
   text-decoration: none;
-  color: #333;
+  color: #000000;
 }
 
 .dropdown-menu li:hover {
