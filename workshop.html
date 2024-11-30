@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops Gallery</title>
+  <style>
+    :root {
+      --purple-black-bg: color-mix(in lab, purple 70%, black 30%);
+    }
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background: url('./images/teambg.png') no-repeat center center fixed; 
+    background-size: cover; 
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      padding: 20px;
+    }
+    .gallery-item {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid white;
+    }
+    .gallery-item h3 {
+      margin: 0;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Workshops</h1>
+    <p>Know about our Workshops!</p>
+  </header>
+   <div class="gallery">
+    <div class="gallery-item">
+      <img src="./images/g2.jpg" alt="Hackathon 2">
+      <h3>Web Craft-HTML Edition</h3>
+    </div>
+    
+    <div class="gallery-item">
+      <img src="./images/g3.jpg" alt="Hackathon 3">
+      <h3>GIT IT DONE</h3>
+    </div>
+
+    <div class="gallery-item">
+      <img src="./images/g4.jpg" alt="Hackathon 4">
+      <h3>Octython</h3>
+    </div>
+  </div>
+</body>
+</html>
