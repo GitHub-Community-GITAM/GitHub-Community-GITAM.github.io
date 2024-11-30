@@ -33,17 +33,30 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
-
 function toggleMenu() {
-  const navLinks = document.querySelector('.nav-links');
-  const hamburgerButton = document.querySelector('.hamburger-button');
-  navLinks.classList.toggle('open');
-
-  if (navLinks.classList.contains('open')) {
-    hamburgerButton.innerHTML = '&#10005;'; // Change to 'X' when open
-  } else {
-    hamburgerButton.innerHTML = '&#9776;'; // Change back to hamburger icon
+    const navLinks = document.querySelector('.nav-links');
+    const hamburgerButton = document.querySelector('.hamburger-button');
+  
+    // Toggle the 'open' class for nav links
+    navLinks.classList.toggle('open');
+  
+    // Update the hamburger icon based on state
+    if (navLinks.classList.contains('open')) {
+      hamburgerButton.innerHTML = '&#10005;'; // Change to 'X' when open
+    } else {
+      hamburgerButton.innerHTML = '&#9776;'; // Change back to hamburger icon
+    }
   }
-}
-
+  
+  // Close the menu when clicking outside
+  document.addEventListener('click', (event) => {
+    const navLinks = document.querySelector('.nav-links');
+    const hamburgerButton = document.querySelector('.hamburger-button');
+  
+    // Check if the click is outside the menu and hamburger button
+    if (!navLinks.contains(event.target) && !hamburgerButton.contains(event.target)) {
+      navLinks.classList.remove('open');
+      hamburgerButton.innerHTML = '&#9776;'; // Reset to hamburger icon
+    }
+  });
   
