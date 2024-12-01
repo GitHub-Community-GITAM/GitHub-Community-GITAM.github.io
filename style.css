@@ -7,7 +7,7 @@
 }
 body {
   font-family: 'Satoshi', sans-serif;
-  background: url('./images/teambg.png') no-repeat center center fixed; 
+  background: url('./images/teambg.png') no-repeat center center ; 
   background-size: cover; 
   color: white;
   height: 100vh;
@@ -129,7 +129,7 @@ header .nav-links a.active {
   text-align: center;
   height: 100vh;
   padding-top: 8rem; 
-  background: url('./images/homebg.png') no-repeat center center fixed; 
+  background: url('./images/homebg.png') no-repeat center center ; 
   background-size: cover;
 }
 
@@ -252,7 +252,6 @@ header .nav-links a.active {
   background-image: url('./images/bg.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; 
   
 }
 
@@ -335,7 +334,6 @@ header .nav-links a.active {
   text-align: center;
   background-image: url('./images/teambg.png');
   background-size: cover;
-  background-attachment: fixed; 
 }
 
 .team-header h1 {
@@ -823,7 +821,6 @@ section {
   background-image: url('./images/aboutbg.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   text-align: left; /* Align content to the left */
   width: 100%; /* Full width */
   max-width: 100%; /* Ensure no max-width restriction */
@@ -1320,6 +1317,21 @@ section {
     margin-bottom: 0.5px;
 }
 }
+@media (max-width:706px){
+  .footer-1 .button {
+    padding: 5px 5px;
+  }
+}
+@media (max-width:655px){
+  .footer-1 .button {
+    padding: 3px 3px;
+  }
+}
+@media (max-width:390px){
+  .footer-1 .button {
+    padding: 6px 8px;
+  }
+}
 @media(max-width:667px){
   .domain-card h2 {
     font-size: 1rem;
@@ -1420,6 +1432,9 @@ section {
   .event-card {
     margin: 10px auto;
     border-radius: 15px;
+  }
+  .team-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
   }
 }
 @media (max-width: 413px){
@@ -1552,6 +1567,16 @@ position: relative;
 
 .event-date, .event-location {
   font-size: 0.8rem; /* Adjust font size for smaller screens */
+}
+}
+
+@media (max-width: 390px){
+  .team-members img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -15px;
 }
 }
 /* Media Query: Max-width 375px */
