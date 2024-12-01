@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GITHUB WEB DEVELOPMENT</title>
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+  background-image: url('./images/teambg.png'); 
+  background-size: cover; 
+  color: white;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.webdev{
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.webdev h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  display: block; 
+  text-align: center;
+  background: linear-gradient(to right, #F5E218, #F520F5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.webdev-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+
+.webdev-card:hover {
+  transform: translateY(-10px);
+}
+
+.webdev-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  height: 350px; 
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column; 
+  margin-right: 40px;
+}
+
+.webdev-card img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover; 
+  object-position: center top;
+  filter: brightness(90%);
+}
+
+
+.card-content {
+  height: 50%; 
+  padding: 10px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: flex-start;
+  background: rgba(0, 0, 0, 0.7); 
+  color: #fff;
+}
+
+.card-content .line,.rectangle-box .line  {
+  width: 150px; 
+  height: 4px; 
+  background: #0707FA; 
+  margin-bottom: 8px; 
+  box-shadow: 0 0 10px #0707FA, 0 0 20px #0707FA; 
+  border-radius: 2px;
+}
+
+
+.card-content h2 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.card-content p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.board-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background: rgba(61, 57, 128, 0.467);
+  border-radius: 20px;
+  color: #0707FA;
+}
+
+.webdev-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(30, 30, 50, 0.9);
+  border-radius: 15px;
+  padding: 1rem; 
+  margin-bottom: 1.5rem; 
+  position: relative;
+  max-width: 95%;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.webdev-text {
+  text-align: left;
+  max-width: 60%; 
+}
+
+.webdev-body h2 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  padding-top: 12px;
+  position: relative; 
+}
+
+.webdev-body h2::before {
+  content: '';
+  position: absolute;
+  top: 0px; 
+  left: 0;
+  width: 120px; 
+  height: 4px; 
+  background: #0707FA; 
+  margin-bottom: 8px; 
+  box-shadow: 0 0 10px #0707FA, 0 0 20px #0707FA; 
+  border-radius: 2px; /
+}
+
+.webdev-body .view-now {
+  display: inline-block;
+  margin-top: 0.1rem;
+  color: white;
+  text-decoration: none;
+  background: #0707FA;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.webdev-body .view-now:hover {
+  background: #504CFF;
+}
+
+.profile-pics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.profile-pics img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -15px; 
+  z-index: 1; 
+  transition: transform 0.3s ease;
+}
+
+.profile-pics img:hover {
+  transform: scale(1.1); 
+}
+
+.profile-pics-container {
+  max-width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.webdev-body .profile-pics {
+  display: flex;
+  gap: -10px; 
+}
+
+.webdev-body .profile-pics img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateX(-5px); 
+}
+
+.rectangle-box {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 15px;
+    width: 50%; 
+    height: 200px; 
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; 
+    border: 2px solid #0707FA;
+}
+
+.rectangle-box img {
+    width: 50%; 
+    height: 100%;
+    border-radius: 0; 
+    object-fit: cover;
+    object-position: center;
+}
+
+.rectangle-box .text-content {
+    text-align: left;
+    width: 50%; 
+    padding: 0; 
+    margin: 20px; 
+}
+
+.rectangle-box .text-content h2 {
+    font-size: 1.2rem; 
+    margin-bottom: 8px; 
+}
+
+.rectangle-box .text-content p {
+    font-size: 0.9rem; 
+    margin-bottom: 8px; 
+}
+
+#custom-cursor {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  z-index: 9999;
+  background: url('./images/customcursor.png') no-repeat center center;
+  background-size: contain;
+border-radius: 50%;
+box-shadow: 0 0 10px rgb(0, 229, 255), 0 0 20px rgb(1, 255, 251), 0 0 30px #0ff, 0 0 40px #0ff;
+}
+
+.footer-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: #000;
+  color: #fff;
+  text-align: left;
+}
+
+#wws {
+  font-size: 2rem; /* Slightly smaller font size */
+  color: #a5a4f1;
+}
+
+#mang {
+  font-size: 0.9rem; 
+  line-height: 1.5;
+}
+
+.footer-1 .button {
+  background-color: white;
+  color: #000;
+  border: none;
+  padding: 12px 30px; /* Adjusted padding */
+  border-radius: 50px; /* Made the button oval-shaped */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.footer-1 .button:hover {
+  background-color: #a5a4f1;
+  color: white;
+}
+
+.footer-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background: #000;
+  color: #fff;
+  text-align: left;
+  border-top: 1px solid rgba(255, 255, 255, 0.44); /* Line above */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.44); /* Line below */
+}
+
+#wws {
+  font-size: 2.8rem; /* Increased font size */
+  color: #a5a4f1;
+  line-height: 1.6;
+  background: linear-gradient(90deg, #9795FF, #FFFFFF, #BE9FFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#mang {
+  font-size: 0.9rem; /* Slightly smaller font size */
+  line-height: 1.5;
+}
+
+.button {
+  background-color: #a5a4f1;
+  color: #000;
+  border: none;
+  padding: 12px 30px; /* Adjusted padding */
+  border-radius: 50px; /* Made the button oval-shaped */
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #a5a4f1;
+}
+
+.footer {
+  padding: 30px; 
+  background: black;
+  background-image: url('./images/fbg.png'); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-section {
+  max-width: 280px; 
+  margin-bottom: 15px; 
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  background: linear-gradient(90deg, #9795FF, #FFFFFF, #BE9FFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-section h3 {
+  margin-bottom: 12px;
+}
+
+.our-domains a,
+.support-feedback a {
+  color: transparent;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px; 
+}
+
+.our-domains a {
+  background: linear-gradient(to right, white, #9795FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.support-feedback a {
+  background: linear-gradient(to bottom, white, #9795FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 15px; 
+  margin-top: 15px; 
+}
+
+.footer-bottom p {
+  margin: 5px 0; 
+}
+/* Styling specifically for the "non tech" section */
+.footer-section.non-tech {
+   /* Dark background to differentiate */
+  padding: 15px;
+  border-radius: 10px;
+}
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #a5a4f1; /* Section headings color */
+}
+
+.footer-section a {
+  display: block;
+  background: linear-gradient(to right, white, #9795FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #a5a4f1; /* Highlight on hover */
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-links a {
+  color: inherit; 
+  text-decoration: none; 
+  position: relative; 
+}
+
+.footer-links a:not(:last-child)::after {
+  content: "•"; 
+  color: #d7d7ea; 
+  margin-left: 10px; 
+  margin-right: 10px; 
+}
+
+.social-icons a {
+  font-size: 18px; 
+  margin-right: 10px; 
+  color: #a5a4f1;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #9795FF;
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropdown-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  display: none;
+  position: absolute;
+}
+
+.dropdown-menu li {
+  padding: 10px 15px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+@media (max-width: 768px){
+  .nav-links {
+    display: none !important; /* Force the rule to apply */
+  }
+
+  .dropdown {
+    display: flex;
+  }
+
+  .join-us{
+    display: none;
+  }
+
+  .logo img{
+    width: 200px !important;
+  }
+  .profile-pics img{
+    height: 45px !important;
+    width: 45px !important;
+  }
+}
+@media (max-width: 600px){
+  .nav-links {
+    display: none !important; /* Force the rule to apply */
+  }
+
+  .dropdown {
+    display: flex;
+  }
+
+  .join-us{
+    display: none;
+  }
+
+  .logo img{
+    width: 200px !important;
+  }
+  .profile-pics img{
+    height: 35px !important;
+    width: 35px !important;
+  }
+}
+@media (max-width: 640px){
+  .rectangle-box .text-content h2 {
+    font-size: 1rem;
+    margin-bottom: 7px;
+}
+}
+@media (max-width:560px){
+  .rectangle-box .text-content h2 {
+    font-size: 0.8rem;
+    margin-bottom: 7px;
+}
+}
+@media (max-width:472px){
+  .rectangle-box .text-content h2 {
+    font-size: 0.6rem;
+    margin-bottom: 5px;
+}
+.rectangle-box .text-content p {
+    font-size: 0.6rem;
+    margin-bottom: 8px;
+}
+.board-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 0.6rem;
+    font-weight: bold;
+    background: rgba(61, 57, 128, 0.467);
+    border-radius: 20px;
+    color: #0707FA;
+}
+}
+@media (max-width:408px){
+  .webdev-body .view-now {
+    padding: 0.3rem 0.5rem;
+}
+.profile-pics img {
+        height: 30px !important;
+        width: 30px !important;
+    }
+}
+@media (max-width:390px){
+  .rectangle-box .text-content h2 {
+    font-size: 0.5rem;
+    margin-bottom: 3px;
+}
+.rectangle-box .text-content p {
+    font-size: 0.5rem;
+    margin-bottom: 5px;
+}
+.board-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 0.5rem;
+    font-weight: bold;
+    background: rgba(61, 57, 128, 0.467);
+    border-radius: 20px;
+    color: #0707FA;
+}
+.webdev-body h2 {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 1rem;
+    padding-top: 12px;
+    position: relative;
+}
+.webdev-body .view-now {
+    padding: 0.1rem 0.2rem;
+}
+}
+@media (max-width:340px){
+  .rectangle-box .text-content h2 {
+    font-size: 0.45rem;
+    margin-bottom: 3px;
+}
+.rectangle-box .text-content p {
+    font-size: 0.45rem;
+    margin-bottom: 5px;
+}
+.board-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 0.45rem;
+    font-weight: bold;
+    background: rgba(61, 57, 128, 0.467);
+    border-radius: 20px;
+    color: #0707FA;
+}
+.webdev-body .view-now {
+    padding: 0.1rem 0.1rem;
+}
+.profile-pics img {
+        height: 25px !important;
+        width: 25px !important;
+    }
+}
+@media (max-width:706px){
+  .footer-1 .button {
+    padding: 5px 5px;
+  }
+}
+@media (max-width:655px){
+  .footer-1 .button {
+    padding: 3px 3px;
+  }
+}
+@media (max-width:390px){
+  .footer-1 .button {
+    padding: 6px 8px;
+  }
+}
+</style>
+</head>
+<body>
+  
+
+    <section class="webdev">
+        
+        <h1>WEB DEV DOMAIN</h1>
+
+        <div class="webdev-body">
+            <div class="webdev-text">
+              <h2>2024-2025</h2>
+              <a href="index.html#team-sections" class="view-now"> ←  Previous Page<span></span></a>
+            </div>
+            <div class="profile-pics">
+                <img src="./idcard/3BA35DBD-CD4D-422C-A0F5-96F9C5C6418C - Gorrepati Sowmya Sri 22105231101.jpeg" alt="User 1">
+                <img src="./idcard/id - Ganapathiraju Sruthi Samhita 22118705101.jpg" alt="User 2">
+                <img src="./idcard/20240518_190118 - Sudheer Sahu 22131425101.jpg" alt="User 3">
+                <img src="./idcard/1000029188 - Malla Mokshith Ayyal 2024018241.jpeg" alt="User 4">
+                <img src="./idcard/IMG_20240909_155432 - natanya natanyagettineni.jpg" alt="User 5">
+                <img src="./idcard/mahesh.jpg" alt="User 6">
+                <img src="./idcard/jpeg-optimizer_KCOPIC_1 - Keren Christena Oliva Pulagala 22117315101.jpg" alt="User 7">
+                <img src="./idcard/20230124_100025 - Indra Kumar Pasunooti 22240200101.jpg" alt="User 8">
+            </div>
+          </div>
+
+          <div class="rectangle-box">
+            <img src="./idcard/3BA35DBD-CD4D-422C-A0F5-96F9C5C6418C - Gorrepati Sowmya Sri 22105231101.jpeg" alt="Profile Picture">
+            <div class="text-content">
+              <div class="line"></div>
+              <h2>G. Sowmya Sri</h2>
+              <p>Team Lead</p>
+              <span class="board-tag">WEB DEV</span>
+            </div>
+          </div>
+
+        <div class="webdev-cards">
+          <div class="webdev-card">
+            <img src="./idcard/id - Ganapathiraju Sruthi Samhita 22118705101.jpg" alt="Sruthi Samhita">
+            <div class="card-content">
+              <div class="line"></div>
+              <h2>Sruthi Samhita</h2>
+              <p>Team Member</p>
+              <span class="board-tag">WEB DEV</span>
+            </div>
+          </div>
+          <div class="webdev-card">
+            <img src="./idcard/20240518_190118 - Sudheer Sahu 22131425101.jpg" alt="Sudheer sahu">
+            <div class="card-content">
+              <div class="line"></div>
+              <h2>Sudheer sahu</h2>
+              <p>Team Member</p>
+              <span class="board-tag">WEB DEV</span>
+            </div>
+          </div>
+          <div class="webdev-card">
+            <img src="./idcard/1000029188 - Malla Mokshith Ayyal 2024018241.jpeg" alt="Mokshith">
+            <div class="card-content">
+              <div class="line"></div>
+              <h2>Mokshith</h2>
+              <p>Team Member</p>
+              <span class="board-tag">WEB DEV</span>
+            </div>
+          </div>
+          <div class="webdev-card">
+            <img src="./idcard/IMG_20240909_155432 - natanya natanyagettineni.jpg" alt="Natanya">
+            <div class="card-content">
+              <div class="line"></div>
+              <h2>Natanya</h2>
+              <p>Team Member</p>
+              <span class="board-tag">WEB DEV</span>
+            </div>
+          </div>
+          <div class="webdev-card">
+            <img src="./idcard/mahesh.jpg" alt="Mahesh Prayaga">
+            <div class="card-content">
+              <div class="line"></div>
+              <h2>Mahesh Prayaga</h2>
+              <p>Team Member</p>
+              <span class="board-tag">WEB DEV</span>
+            </div>
+          </div>
+          <div class="webdev-card">
+            <img src="./idcard/jpeg-optimizer_KCOPIC_1 - Keren Christena Oliva Pulagala 22117315101.jpg" alt="Christena Oliva">
+            <div class="card-content">
+              <div class="line"></div>
+              <h2>Christena Oliva</h2>
+              <p>Team Member</p>
+              <span class="board-tag">WEB DEV</span>
+            </div>
+          </div>
+          <div class="webdev-card">
+            <img src="./idcard/20230124_100025 - Indra Kumar Pasunooti 22240200101.jpg" alt="Indra Kumar">
+            <div class="card-content">
+              <div class="line"></div>
+              <h2>Indra Kumar</h2>
+              <p>Team Member</p>
+              <span class="board-tag">WEB DEV</span>
+            </div>
+          </div>
+        </div>
+      </section>
+ 
+             
+<div class="footer-1">
+  <div>
+    <h1 id="wws">Work with Us</h1>
+    <p id="mang">
+      Mangcoding is a biggest company in Indonesia, who provides the
+      services in <br />
+      Development Website, Shopify and WordPress
+    </p>
+  </div>
+  <div>
+    <a href="https://chat.whatsapp.com/GNHGWxEbHXZLYkDuuTdHRO" ><button class="button">Know More &#x2197;</button></a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+   
+    <div class="footer-section non-tech">
+      <h3>GitHub Community GITAM</h3>
+      <p>
+        A collaborative space for developers to share, contribute, and grow
+        open-source projects together
+      </p>
+    </div>
+
+    <div class="footer-section non-tech">
+      <h3>Tech</h3>
+      <a href="webdev.html">Web Development</a>
+      <a href="aiml.html">AI/ML</a>
+      <a href="uiux.html">UI/UX</a>
+      <a href="websec.html">Web Security</a>
+      <a href="ds.html">Data Science</a>
+      
+    </div>
+
+    <div class="footer-section non-tech">
+      <h3>Non Tech</h3>
+      <a href="pr.html">PR</a>
+      <a href="content.html">Content</a>
+      <a href="design.html">Design</a>
+    </div>
+
+    <div class="footer-section non-tech">
+      <h3>GitHub GITAM Campuses</h3>
+      <a href="pr.html">Visakhapatnam</a>
+      <a href="content.html">Hyderabad</a>
+      <a href="design.html">Banglore</a>
+    </div>
+    
+
+    <div class="footer-section non-tech">
+      <h3>Support and Feedback</h3>
+      <a href="https://forms.gle/QJBZLxagwwYtde1V6">Report Issues</a>
+      <a href="https://forms.gle/rP2nfMbBfrSawP9U7">Feedback Form</a>
+      <a href="https://forms.gle/44EXptFiCFMWnMhi6">Community Forums</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 GitHub Community GITAM. All rights reserved</p>
+
+    <div class="social-icons">
+      <a
+        href="https://www.instagram.com/githubcommunitygitam/"
+        target="_blank"
+        aria-label="Instagram"
+        class="fab fa-instagram"
+      ></a>
+      <a
+        href="https://chat.whatsapp.com/GNHGWxEbHXZLYkDuuTdHRO"
+        target="_blank"
+        aria-label="WhatsApp"
+        class="fab fa-whatsapp"
+      ></a>
+      <a
+        href="https://www.linkedin.com/company/githubcommunitygitam/posts/?feedView=all"
+        target="_blank"
+        aria-label="LinkedIn"
+        class="fab fa-linkedin"
+      ></a>
+      <a
+        href="https://github.com/github-community-gitam"
+        target="_blank"
+        aria-label="github"
+        class="fab fa-github"
+      ></a>
+    </div>
+  </div>
+</footer>
+
+      <script src="./app.js"></script>
+      <script src="./script.js"></script>
+</body>
+</html> 
